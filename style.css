@@ -24,10 +24,18 @@ body{
     border-radius: 1.5rem;
     box-shadow: 10px 10px 30px lightgray;
     text-align: center;
-    
 }
 
+.currentplan{
+    margin-left: 1.5rem;
+    font-weight: 900 !important;
+}
 
+.price{
+    color: grey;
+    font-weight: 500 !important;
+    margin-top: 0.5rem;
+}
 
 .title{
     font-weight: 900 !important;
@@ -40,7 +48,6 @@ body{
 }
 
 .plans{
-    display:flex;
     margin-left: 1.5rem;
     background-color: hsl(225, 100%, 98%);
     border-radius: 0.7rem;
@@ -48,6 +55,7 @@ body{
     padding: 1rem;
     width: 20rem;
     margin-bottom:1.5rem;
+    display: flex;
     flex-direction: row;
 }
 
@@ -60,6 +68,7 @@ body{
     cursor: pointer;
     float: right;
     width: 5rem;
+    margin-left: 5rem;
 }
 
 .paybutton{
@@ -90,3 +99,76 @@ body{
     padding: 0.7rem;
     margin-bottom:1.5rem;
 }
+
+@media only screen and (max-width: 400px) {
+    body{
+        justify-content: center;
+        align-items: center;
+        min-height:100%;
+        font-size:18px;
+        font-family: "Red Hat Display";
+        background-image:url("images/pattern-background-mobile.svg") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display:flex;
+        flex-direction:column;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .card{
+        background-color: white;
+        max-width: 100%;
+        border-radius: 1.5rem;
+        box-shadow: 10px 10px 30px lightgray;
+        text-align: center;
+    }
+
+    
+    .img-card{
+    border-radius: 1.5rem 1.5rem 0 0;
+    max-width: 100%;
+    filter: blur(0.5px);
+    }
+    
+    .plans{
+        margin-left: 1.5rem;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 0.7rem;
+        text-align:left;
+        padding: 1rem;
+        width: 80%;
+        margin-bottom:1.5rem;
+
+        flex-direction: row;
+    }
+
+    .paybutton{
+        font-family: "Red Hat Display";
+        cursor: pointer;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        border-radius: 0.7rem;
+        width: 85%;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        padding: 0.7rem;
+        box-shadow: 10px 10px 30px rgb(190, 188, 188);
+        margin-bottom:1.5rem;
+    }
+    
+    .returnbutton{
+        cursor: pointer;
+        font-family: "Red Hat Display";
+        background-color: white;
+        color: grey;
+        border-radius: 0.7rem;
+        width: 85%;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        padding: 0.7rem;
+        margin-bottom:1.5rem;
+    }
+
+  }
